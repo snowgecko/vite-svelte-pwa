@@ -34,8 +34,9 @@
     <script>
       // PWA
       if ('serviceWorker' in navigator) {
+        //navigator.serviceWorker.register(href = '/service_worker.js', { scope: '/' })
         navigator.serviceWorker.register('./service-worker.js', {
-          scope: '/'
+          scope: './'
         });
       }
     </script>
